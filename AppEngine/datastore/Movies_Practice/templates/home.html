@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet"
+    href = "stylesheets/style.css" />
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/1009px-Rotten_Tomatoes.svg.png">
+    <title>IMDB</title>
+  </head>
+  <body>
+    <h2>Movies</h2>
+    <p> Current user is: {{current_user.email()}}</p>
+    <p> Current user is: {{current_user.user_id()}}</p>
+    <p> Login URL: <a href="{{signin_link}}"> Login</a></p>
+
+
+    <ul>
+
+    {% for movie in movies %}
+    <li> <strong>{{movie.title}}</strong>
+      <ul>
+        {% for star_keys in movie.star_keys %}
+        {% set star = star_keys.get() %}
+        <li>Name: {{star.actname}} </li>
+        <ul>
+          <li> Age: {{star.age}}</li>
+          <li> Oscars: {{star.oscars}}</li>
+        </ul>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet"
+    href = "stylesheets/stylez.css" />
+    <title>Inbox</title>
+  </head>
+  <body>
+    <h1>Inbox</h1>
+      Welcome to your Inbox
+    <ul>
+      {% for email in inbox%}
+      <li> {% if email.unread %}
+        <strong>Email: {{email.title}},
+        Subject: {{email.subject}},</strong>
+        {% else %}
+        Email: {{email.title}},
+        Subject: {{email.subject}},
+        {% endif %}
+        </li>
+        {% endfor %}
+  </ul>
+  </body>
+</html>
