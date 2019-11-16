@@ -1,0 +1,78 @@
+html{
+background-color: dodgerblue;
+background-size:cover;
+
+height: 100vh;
+padding:0;
+margin:0;
+}
+//* ^BACKGROUND ^^   */
+
+#IMG{
+width: 200px;
+height:200px;
+}
+h1 {
+  font-family: 'Comic Sans', sans-serif;
+}
+/* This is the title font family*/
+
+#header{
+  color:cyan;
+  font-size: 40px;
+  height: 100%
+}
+
+/* This is the title font color*/
+
+#subheader{
+  color:#73a9ff;
+  font-size: 40px;
+  height: 100%
+}
+p{
+  color:#c40a0a;
+  font-size: 20px;
+  height: 100%
+  text-align: justify;
+}
+
+/* This is the text font color,size and paragraph alignment*/
+h4{
+color:white;
+font-size: 28px
+}
+
+h5{
+color:white;
+font-size: 25px
+}
+
+li{
+    color:#005219;
+    font-size: 20px;
+    height: 100%
+  }
+
+  a{
+      color:pink;
+      font-size: 15px;
+      height: 100%
+}
+
+/* This is the list font color,border, and padding */
+ul{
+  list-style: none;
+  border:1px solid #00f74a;
+  border-radius: 20px;
+  padding: 20px 0 20px 0;
+}
+
+.IMGS{
+  width:400px;
+}
+
+#HEADIMG{
+  width: 800px;
+  height:250px;
+}
