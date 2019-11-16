@@ -1,4 +1,4 @@
-let firstName = 'Samuel';
+llet firstName = 'Samuel';
 let lastName = 'Sandoval';
 let age = 27;
 
